@@ -1,0 +1,106 @@
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-pink: #fe918d;
+  --color-dark-pink: #ff6863;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #616161;
+  --color-light-grey: #7c7979;
+  --color-blue: #73aace;
+  --color-yellow: #fff7d1;
+  --color-orange: #feb546;
+  --color-black: #000000;
+  --color-light-pink: #ff9f9f;
+  --color-green: #1e6350;
+  --color-light-green: #34a853;
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+}
+
+.custom-infowindow {
+  width: 50px;
+  /* 인포윈도우의 너비 */
+  background-color: #fff;
+  /* 인포윈도우의 배경색 */
+  padding: 10px;
+  /* 인포윈도우의 내부 여백 */
+  font-size: 14px;
+  /* 인포윈도우의 폰트 크기 */
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-white);
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+  position: relative;
+  z-index: 1;
+}
+
+.navbar__logo {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-light-green);
+}
+
+ol>li[data-type="walk"]:not(li[data-type='exclude']) {
+  list-style-image: url('../Image/person-walking-solid.svg');
+}
+
+ol>li[data-type="bus"]:not(li[data-type='exclude']) {
+  list-style-image: url('../Image/bus-simple-solid.svg');
+}
+
+ol>li[data-type="subway"]:not(li[data-type='exclude']) {
+  list-style-image: url('../Image/train-subway-solid.svg');
+}
+
+ol>li[data-type="expressbus"]:not(li[data-type='exclude']) {
+  list-style-image: url('../Image/bus-simple-solid.svg');
+}
+
+ol>li[data-type="train"]:not(li[data-type='exclude']) {
+  list-style-image: url('../Image/train-tram-solid.svg');
+}
+
+ol>li[data-type="ferry"]:not(li[data-type='exclude']) {
+  list-style-image: url('../Image/ferry-solid.svg');
+}
+
+ol>li[data-type="airplane"]:not(li[data-type='exclude']) {
+  list-style-image: url('../Image/plane-solid.svg');
+}
+
+ol>li[data-type="transfer"]:not(li[data-type='exclude']) {
+  list-style-image: url('../Image/truck-plane-solid.svg');
+}
+
+/* Subject */
+#subject {
+  background-color: var(--color-light-green);
+  text-align: center;
+  border-bottom: 1px solid var(--color-light-green);
+}
+
+.subject__title {
+  padding: 80px;
+  margin: 0;
+}

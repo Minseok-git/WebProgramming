@@ -1,0 +1,39 @@
+<!-- 사용자가 설정한 경로 기반으로 하여 대중교통 경로를 제공해주는 사이트입니다. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tmap Transit Route</title>
+    <script src="../JS/findRoad.js"></script>
+    <link rel="icon" type="image/png" href="../Image/trailFinder.png" />
+    <script src="https://kit.fontawesome.com/ae64d596a9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/findRoad.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <!-- solid style -->
+            <i class="fa-solid fa-person-hiking"></i>
+            <a href="./mainPage.html">TrailFinder</a>
+        </div>
+    </nav>
+    <!-- subject -->
+    <section id="subject">
+        <h2 class="subject__title">
+            경로 탐색 결과
+        </h2>
+    </section>
+    <div id="map" style="width:100%;height:350px;"></div>
+
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5e13ad3679b0afb6332529f8ae7ca17a"></script>
+    <script>
+        fetchTransitRoutes();
+    </script>
+</body>
+
+</html>

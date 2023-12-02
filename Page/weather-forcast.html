@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:,">
+    <title>등산로 초단기 날씨 예보</title>
+    <script src="https://kit.fontawesome.com/ae64d596a9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+        integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="../CSS/weatherForcast.css?ver=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Orbit&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <!-- solid style -->
+            <i class="fa-solid fa-person-hiking"></i>
+            <a href="./mainPage.html">TrailFinder</a>
+        </div>
+    </nav>
+    <!-- subject -->
+    <section id="subject">
+        <h2 class="subject__title">
+            초단기 날씨 정보
+        </h2>
+    </section>
+
+
+    <div class="left-sidebar">
+        <img src="..\Image\weather.png" alt="날씨 이미지">
+    </div>
+    
+
+    <div class="container">
+        <div id="search-container">
+            <input type="text" id="search" class="search-input">
+            <button type="button" class="search-button" onclick="searchPlace()">검색</button>
+        </div>
+        <div id="map"></div>
+        <div id="searchResult"></div>
+        <p class="result"></p>
+        <p id="sample_data"></p>
+        <div class="container">
+            <p class="result"></p>
+            <p id="sample_data"></p>
+
+
+
+            <table id="weather-table" class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>날짜</th>
+                        <th>시간</th>
+                        <th>강수형태</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="3">조회내용이 없습니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script type="text/javascript"
+            src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5e13ad3679b0afb6332529f8ae7ca17a&libraries=services"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script src="../JS/weather-forcast.js"></script>
+
+</body>
+
+</html>

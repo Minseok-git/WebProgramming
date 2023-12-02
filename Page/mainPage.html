@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="../CSS/mainPage.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ae64d596a9.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="../Image/trailFinder.png" />
+    <script src="../JS/weather.js?ver=1"></script>
+    <title>TrailFinder</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <!-- solid style -->
+            <i class="fa-solid fa-person-hiking"></i>
+            <a href="./mainPage.html">TrailFinder</a>
+        </div>
+    </nav>
+    <!-- Home -->
+    <section id="home">
+        <h1 id="home__title">TrailFinder</h1>
+        <p id="weather"></p>
+    </section>
+    <section id="selection">
+        <button class="selection__button" type="button" onclick="location.href='./trailFinder.html'"
+            style="background-image: url('../Image/trailFinder-background.jpeg')">
+        </button>
+        <button class="selection__button" type="button" onclick="location.href='./CategorySearch.html'"
+            style="background-image: url('../Image/Category-background.jpeg')">
+        </button>
+        <button class="selection__button" type="button" onclick="location.href='./weather-forcast.html'"
+            style="background-image: url('../Image/weather-background.jpeg')">
+        </button>
+        <button class="selection__button" type="button" onclick="location.href='./findMountain.html'"
+            style="background-image: url('../Image/findMountain-background.jpeg')">
+        </button>
+        <button class="selection__button" type="button" onclick="location.href='./SafeHiking.html'"
+            style="background-image: url('../Image/SafeHiking-background.jpeg')">
+        </button>
+    </section>
+</body>
+
+</html>
